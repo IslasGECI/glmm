@@ -1,4 +1,4 @@
-FROM islasgeci/jupyter:8e52
+FROM islasgeci/jupyter:ff82
 # Instala paquetes de R
 RUN conda install --quiet --yes \
     'r-car' \
