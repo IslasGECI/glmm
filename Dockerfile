@@ -9,4 +9,3 @@ RUN conda install --quiet --yes \
         && \
     conda clean --all -f -y && \
     fix-permissions $CONDA_DIR
-CMD ["bash", "-c", "umask 000 && bash"]
