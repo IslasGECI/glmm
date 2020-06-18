@@ -1,4 +1,4 @@
-FROM islasgeci/jupyter:8e52
+FROM islasgeci/jupyter:ff82
 # Instala paquetes de R
 RUN conda install --quiet --yes \
     'r-car' \
@@ -9,4 +9,3 @@ RUN conda install --quiet --yes \
         && \
     conda clean --all -f -y && \
     fix-permissions $CONDA_DIR
-CMD ["bash", "-c", "umask 000 && bash"]
