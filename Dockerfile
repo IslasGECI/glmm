@@ -7,5 +7,5 @@ RUN conda install --quiet --yes \
     'r-lme4' \
     'r-mumin' \ 
         && \
-    conda clean --all -f -y && \
+    conda clean --all -f --yes && \
     fix-permissions $CONDA_DIR
